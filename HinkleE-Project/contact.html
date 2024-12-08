@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | IV Training</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topheader">
+        <header class="header">
+            <div class="logo">
+                <h1>IV Training</h1>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1>Contact Us!</h1>
+            <hr class="divider"><br>
+            <h3>Use this form to request a training session or ask about availability.</h3> <br>
+            <form class="contact-form" action="submit-form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="services">Services</label>
+                    <select id="services" name="services" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Full-Body-Training">Full Body Training</option>
+                        <option value="Explosive-Training">Explosive Training</option>
+                        <option value="Upper-Body">Upper Body</option>
+                        <option value="Lower-Body">Lower Body</option>
+                        <option value="Custom-Training">Custom Training</option>
+                        <option value="Yoga">Yoga</option>
+                        <option value="Outdoor-Jogging-Walking-Running">Outdoor Jogging, Walking & Running</option>
+                        <option value="Water-Aerobics">Water Aerobics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-slot">Preferred Time Slot</label>
+                    <select id="time-slot" name="time-slot" required>
+                        <option value="" disabled selected>Select a time slot</option>
+                        <option value="6AM-7AM">6:00AM - 7:00AM</option>
+                        <option value="7AM-8AM">7:00AM - 8:00AM</option>
+                        <option value="8AM-9AM">8:00AM - 9:00AM</option>
+                        <option value="9AM-10AM">9:00AM - 10:00AM</option>
+                        <option value="10AM-11AM">10:00AM - 11:00AM</option>
+                        <option value="11AM-12PM">11:00AM - 12:00PM</option>
+                        <option value="12PM-1PM">12:00PM - 1:00PM</option>
+                        <option value="1PM-2PM">1:00PM - 2:00PM</option>
+                        <option value="2PM-3PM">2:00PM - 3:00PM</option>
+                        <option value="3PM-4PM">3:00PM - 4:00PM</option>
+                        <option value="4PM-5PM">4:00PM - 5:00PM</option>
+                        <option value="5PM-6PM">5:00PM - 6:00PM</option>
+                        <option value="6PM-7PM">6:00PM - 7:00PM</option>
+                        <option value="7PM-8PM">7:00PM - 8:00PM</option>
+                        <option value="8PM-9PM">8:00PM - 9:00PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message/Notes</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+            <p></p>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 Invictivi Training. All rights reserved. | Phone: (703)-111-1111 | Email: support@invictivitraining.com</p>
+        </footer>
+    </div>
+</body>
+</html>
+  
